@@ -6,3 +6,72 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: grey;
+  padding: 20px;
+}
+.page-wrapper .form-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: rgb(13, 13, 13) 0px 3px 8px;
+}
+.page-wrapper .form-container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  /* width: 100%; */
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 4px;
+  font-size: 16px;
+}
+.form-group input :focus,
+.form-group select :focus,
+.form-group textarea :focus {
+  border-color: aqua;
+  outline: none;
+}
+
+.form-group input [type="date"] {
+  font-family: inherit;
+}
+
+.form-group button {
+  padding: 10px 20px;
+  background-color: rgb(71, 95, 247);
+  color: white;
+  border-radius: 4px;
+  font-size: 18px;
+  border: none;
+}
+
+.form-container .form-button {
+  display: flex;
+  justify-content: space-between;
+}
+.form-container .form-button button {
+  cursor: pointer;
+}
